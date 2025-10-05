@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="locationMessage" class="location-message"></div>
+
+        <!-- Main Dashboard -->
+        <div class="dashboard main-dashboard">
+            <img src="icons/thermometer.png" alt="Temperature" class="icon">
+            <h1 id="cityName">Loading...</h1>
+            <h2 id="temp"></h2>
+            <h3 id="description"></h3>
+        </div>
+
+        <!-- Details Dashboard -->
+        <div class="dashboard details-dashboard">
+            <div class="info-item">
+                <img src="icons/humidity.png" alt="Humidity" class="icon">
+                <p>Humidity</p>
+                <span id="humidity">--</span>%
+            </div>
+            <div class="info-item">
+                <img src="icons/wind.png" alt="Wind" class="icon">
+                <p>Wind</p>
+                <span id="wind">--</span> m/s
+            </div>
+            <div class="info-item">
+                <img src="icons/visibility.png" alt="Visibility" class="icon">
+                <p>Visibility</p>
+                <span id="visibility">--</span> km
+            </div>
+            <div class="info-item">
+                <img src="icons/pressure.png" alt="Pressure" class="icon">
+                <p>Pressure</p>
+                <span id="pressure">--</span> hPa
+            </div>
+            <div class="info-item">
+                <img src="icons/feelslike.png" alt="Feels Like" class="icon">
+                <p>Feels Like</p>
+                <span id="feelsLike">--</span>°C
+            </div>
+            <div class="info-item">
+                <img src="icons/cloud.png" alt="Clouds" class="icon">
+                <p>Clouds</p>
+                <span id="clouds">--</span>%
+            </div>
+        </div>
+
+        <!-- Sun & Time Dashboard -->
+        <div class="dashboard sun-dashboard">
+            <div class="info-item">
+                <img src="icons/sunrise.png" alt="Sunrise" class="icon">
+                <p>Sunrise</p>
+                <span id="sunrise">--</span>
+            </div>
+            <div class="info-item">
+                <img src="icons/sunset.png" alt="Sunset" class="icon">
+                <p>Sunset</p>
+                <span id="sunset">--</span>
+            </div>
+            <div class="info-item">
+                <img src="icons/clock.png" alt="Local Time" class="icon">
+                <p>Local Time</p>
+                <span id="localTime">--</span>
+            </div>
+        </div>
+
+        <!-- Coordinates Dashboard -->
+        <div class="dashboard coord-dashboard">
+            <div class="info-item">
+                <img src="icons/latitude.png" alt="Latitude" class="icon">
+                <p>Latitude</p>
+                <span id="lat">--</span>
+            </div>
+            <div class="info-item">
+                <img src="icons/longitude.png" alt="Longitude" class="icon">
+                <p>Longitude</p>
+                <span id="lon">--</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Professional Weather Dashboard.</p>
+</footer>
+
+</html>
